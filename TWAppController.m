@@ -56,7 +56,7 @@
 	/* For pushing revisions on the track */
 	[[NSNotificationCenter defaultCenter] addObserver: self 
 	                                         selector: @selector(didMakeLocalCommit:) 
-	                                             name: COEditingContextDidCommitNotification 
+	                                             name: COEditingContextDidChangeNotification 
 	                                           object: [COEditingContext currentContext]];
 }
 
